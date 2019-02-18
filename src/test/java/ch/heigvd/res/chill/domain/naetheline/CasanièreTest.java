@@ -4,6 +4,7 @@ import ch.heigvd.res.chill.domain.Bartender;
 import ch.heigvd.res.chill.protocol.OrderRequest;
 import ch.heigvd.res.chill.protocol.OrderResponse;
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.math.BigDecimal;
 
@@ -22,7 +23,7 @@ public class CasanièreTest {
     @Test
     void aBartenderShouldAcceptAnOrderForCasanière() {
         Bartender Ellie = new Bartender();
-        String productName = "ch.heigvd.res.chill.domain.wasadigi.Boxer";
+        String productName = "ch.heigvd.res.chill.domain.naetheline.Casanière";
         OrderRequest request = new OrderRequest(2, productName);
         OrderResponse response = Ellie.order(request);
         BigDecimal expectedTotalPrice = Casanière.PRICE.multiply(new BigDecimal(2));
