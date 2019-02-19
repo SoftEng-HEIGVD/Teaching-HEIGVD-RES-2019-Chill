@@ -8,5 +8,5 @@ import java.math.BigDecimal;
 public class OrderResponse implements IMessage {
 
   private final BigDecimal totalPrice;
-
+  private final String text;
 }

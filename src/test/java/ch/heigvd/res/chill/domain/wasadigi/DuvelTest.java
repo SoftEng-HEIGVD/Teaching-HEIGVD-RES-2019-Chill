@@ -22,7 +22,7 @@ class DuvelTest {
   void aBartenderShouldAcceptAnOrderForPunkIPA() {
     Bartender jane = new Bartender();
     String productName = "ch.heigvd.res.chill.domain.wasadigi.Duvel";
-    OrderRequest request = new OrderRequest(3, productName);
+    OrderRequest request = new OrderRequest(3, productName, 2);
     OrderResponse response = jane.order(request);
     BigDecimal expectedTotalPrice = Duvel.PRICE.multiply(new BigDecimal(3));
     assertEquals(expectedTotalPrice, response.getTotalPrice());

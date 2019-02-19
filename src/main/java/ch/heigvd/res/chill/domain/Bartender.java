@@ -6,6 +6,7 @@ import ch.heigvd.res.chill.protocol.OrderRequest;
 import ch.heigvd.res.chill.protocol.OrderResponse;
 
 import java.math.BigDecimal;
+import java.util.Random;
 
 public class Bartender {
 
@@ -16,14 +17,17 @@ public class Bartender {
   public OrderResponse order(OrderRequest request) {
     String productName = request.getProductName();
 
-    try {
-      // let Java reflection do its magic
-      IProduct product = (IProduct) Class.forName(productName).newInstance();
-      BigDecimal totalPrice = product.getPrice().multiply(new BigDecimal(request.getQuantity()));
-      return new OrderResponse(totalPrice);
-    } catch (Exception e) {
-      return null;
+    if(request.getBeerCount() > 3){
+      return new OrderResponse(new BigDecimal(0),"Sorry Olivier you're too drunk now !");
+    } else {
+      try {
+        // let Java reflection do its magic
+        IProduct product = (IProduct) Class.forName(productName).newInstance();
+        BigDecimal totalPrice = product.getPrice().multiply(new BigDecimal(request.getQuantity()));
+        return new OrderResponse(totalPrice, "Enjoy !");
+      } catch (Exception e) {
+        return null;
+      }
     }
   }
-
 }

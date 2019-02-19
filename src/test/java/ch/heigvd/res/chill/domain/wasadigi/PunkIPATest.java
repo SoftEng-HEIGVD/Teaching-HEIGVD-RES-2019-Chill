@@ -22,7 +22,7 @@ class PunkIPATest {
   void aBartenderShouldAcceptAnOrderForPunkIPA() {
     Bartender jane = new Bartender();
     String productName = "ch.heigvd.res.chill.domain.wasadigi.PunkIPA";
-    OrderRequest request = new OrderRequest(3, productName);
+    OrderRequest request = new OrderRequest(3, productName, 2);
     OrderResponse response = jane.order(request);
     BigDecimal expectedTotalPrice = PunkIPA.PRICE.multiply(new BigDecimal(3));
     assertEquals(expectedTotalPrice, response.getTotalPrice());
