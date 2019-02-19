@@ -24,7 +24,7 @@ class LaBlondeTest {
         String productName = "ch.heigvd.res.chill.domain.pagedidier.LaBlonde";
         OrderRequest request = new OrderRequest(3, productName);
         OrderResponse response = jane.order(request);
-        BigDecimal expectedTotalPrice = CuveeDesTrolls.PRICE.multiply(new BigDecimal(3));
+        BigDecimal expectedTotalPrice = LaBlonde.PRICE.multiply(new BigDecimal(3));
         assertEquals(expectedTotalPrice, response.getTotalPrice());
     }
 
