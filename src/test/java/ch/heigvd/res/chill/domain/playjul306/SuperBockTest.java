@@ -14,14 +14,14 @@ class SuperBockTest {
   public final static int NUMBER = 5;
 
   @Test
-  void thePriceAndNameForPunkIPAShouldBeCorrect() {
+  void thePriceAndNameForSuperBockShouldBeCorrect() {
     SuperBock beer = new SuperBock();
     assertEquals(beer.getName(), SuperBock.NAME);
     assertEquals(beer.getPrice(), SuperBock.PRICE);
   }
 
   @Test
-  void aBartenderShouldAcceptAnOrderForPunkIPA() {
+  void aBartenderShouldAcceptAnOrderForSuperBock() {
     Bartender jane = new Bartender();
     String productName = "ch.heigvd.res.chill.domain.playjul306.SuperBock";
     OrderRequest request = new OrderRequest(NUMBER, productName);
