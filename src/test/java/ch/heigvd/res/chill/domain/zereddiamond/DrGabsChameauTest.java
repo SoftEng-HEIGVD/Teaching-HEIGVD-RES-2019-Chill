@@ -1,4 +1,4 @@
-package ch.heigvd.res.chill.domain.wasadigi;
+package ch.heigvd.res.chill.domain.zereddiamond;
 
 import ch.heigvd.res.chill.domain.Bartender;
 import ch.heigvd.res.chill.protocol.OrderRequest;
@@ -21,7 +21,7 @@ class DrGabsChameauTest {
     @Test
     void aBartenderSouldAcceptAnOrderForDrGabsChameau() {
         Bartender jack = new Bartender();
-        String productName = "ch.heigvd.res.chill.domain.wasadigi.DrGabsChameau";
+        String productName = "ch.heigvd.res.chill.domain.zereddiamond.DrGabsChameau";
         OrderRequest request = new OrderRequest(2, productName);
         OrderResponse response = jack.order(request);
         BigDecimal expectedTotalPrice = DrGabsChameau.PRICE.multiply(new BigDecimal(2));
