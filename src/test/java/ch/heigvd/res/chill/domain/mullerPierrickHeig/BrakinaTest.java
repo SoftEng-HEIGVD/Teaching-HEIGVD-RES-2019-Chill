@@ -1,7 +1,7 @@
 package ch.heigvd.res.chill.domain.mullerPierrickHeig;
 
 import ch.heigvd.res.chill.domain.Bartender;
-import ch.heigvd.res.chill.domain.wasadigi.Boxer;
+import ch.heigvd.res.chill.domain.mullerPierrickHeig.Brakina;
 import ch.heigvd.res.chill.protocol.OrderRequest;
 import ch.heigvd.res.chill.protocol.OrderResponse;
 import org.junit.jupiter.api.Test;
