@@ -1,13 +1,13 @@
-package ch.heigvd.res.chill.domain.wasadigi;
+package ch.heigvd.res.chill.domain.edinem;
 
 import ch.heigvd.res.chill.domain.IProduct;
 
 import java.math.BigDecimal;
 
-public class Boxer implements IProduct {
+public class Jelen implements IProduct {
 
-  public final static String NAME = "Boxer";
-  public final static BigDecimal PRICE = new BigDecimal(2.0);
+  public final static String NAME = "Jelen";
+  public final static BigDecimal PRICE = new BigDecimal(1.2);
 
   @Override
   public String getName() {
