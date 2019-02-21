@@ -21,7 +21,7 @@ class PilsnerUrquellTest {
     @Test
     void aBartenderShouldAcceptAnOrderForPilsnerUrquell() {
         Bartender jane = new Bartender();
-        String productName = "ch.heigvd.res.chill.domain.wasadigi.PunkIPA";
+        String productName = "ch.heigvd.res.chill.domain.wasadigi.PilsnerUrquell";
         OrderRequest request = new OrderRequest(3, productName);
         OrderResponse response = jane.order(request);
         BigDecimal expectedTotalPrice = PilsnerUrquell.PRICE.multiply(new BigDecimal(3));
