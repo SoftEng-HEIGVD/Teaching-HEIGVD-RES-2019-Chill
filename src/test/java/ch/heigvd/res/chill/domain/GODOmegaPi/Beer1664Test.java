@@ -22,9 +22,9 @@ class Beer1664Test {
     void aBartenderShouldAcceptAnOrderFor1664() {
         Bartender jane = new Bartender();
         String productName = "ch.heigvd.res.chill.domain.GODOmegaPi.Beer1664";
-        OrderRequest request = new OrderRequest(10, productName);
+        OrderRequest request = new OrderRequest(5, productName);
         OrderResponse response = jane.order(request);
-        BigDecimal expectedTotalPrice = Beer1664.PRICE.multiply(new BigDecimal(10));
+        BigDecimal expectedTotalPrice = Beer1664.PRICE.multiply(new BigDecimal(5));
         assertEquals(expectedTotalPrice, response.getTotalPrice());
     }
 
