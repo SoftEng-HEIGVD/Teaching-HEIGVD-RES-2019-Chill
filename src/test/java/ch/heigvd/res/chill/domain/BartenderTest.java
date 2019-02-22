@@ -1,19 +1,15 @@
 package ch.heigvd.res.chill.domain;
 
-import ch.heigvd.res.chill.protocol.GreetingsRequest;
-import ch.heigvd.res.chill.protocol.GreetingsResponse;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 class BartenderTest {
 
-  @Test
-  void aBartenderShouldReplyToGreetings() {
-    Bartender john = new Bartender();
-    GreetingsRequest request = new GreetingsRequest("Hi there");
-    GreetingsResponse response = john.greet(request);
-    assertEquals("hello, how can I help you?", response.getText());
-  }
-
+    @Test
+    void aBartenderShouldReplyToGreetings() {
+        Bartender jhon = new Bartender();
+        String response = jhon.great("hello");
+        assertEquals("hello, how can help you?", response);
+    }
 }
