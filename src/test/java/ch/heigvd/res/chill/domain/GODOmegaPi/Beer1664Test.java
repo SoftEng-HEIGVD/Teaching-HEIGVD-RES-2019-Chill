@@ -14,8 +14,8 @@ class Beer1664Test {
     @Test
     void thePriceAndNameFor1664ShouldBeCorrect() {
         Beer1664 beer = new Beer1664();
-        assertEquals(beer.getName(), Guinness.NAME);
-        assertEquals(beer.getPrice(), Guinness.PRICE);
+        assertEquals(beer.getName(), Beer1664.NAME);
+        assertEquals(beer.getPrice(), Beer1664.PRICE);
     }
 
     @Test
