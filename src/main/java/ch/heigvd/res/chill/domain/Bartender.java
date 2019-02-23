@@ -4,13 +4,14 @@ import ch.heigvd.res.chill.protocol.GreetingsRequest;
 import ch.heigvd.res.chill.protocol.GreetingsResponse;
 import ch.heigvd.res.chill.protocol.OrderRequest;
 import ch.heigvd.res.chill.protocol.OrderResponse;
+import lombok.Data;
 
 import java.math.BigDecimal;
 
 public class Bartender {
 
   public GreetingsResponse greet(GreetingsRequest request) {
-    return new GreetingsResponse("hello, how can I help you?");
+    return new GreetingsResponse("Hello, how can I help you ?");
   }
 
   public OrderResponse order(OrderRequest request) {
@@ -25,5 +26,4 @@ public class Bartender {
       return null;
     }
   }
-
 }
