@@ -4,7 +4,6 @@ import ch.heigvd.res.chill.protocol.GreetingsRequest;
 import ch.heigvd.res.chill.protocol.GreetingsResponse;
 import ch.heigvd.res.chill.protocol.OrderRequest;
 import ch.heigvd.res.chill.protocol.OrderResponse;
-import lombok.Data;
 
 import java.math.BigDecimal;
 
@@ -26,4 +25,5 @@ public class Bartender {
       return null;
     }
   }
+
 }
