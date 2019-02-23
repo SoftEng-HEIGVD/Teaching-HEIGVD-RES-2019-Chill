@@ -13,7 +13,7 @@ class BartenderTest {
     Bartender john = new Bartender();
     GreetingsRequest request = new GreetingsRequest("Hi there");
     GreetingsResponse response = john.greet(request);
-    assertEquals("Hello, how can I help you ?", response.getText());
+    assertEquals("hello, how can I help you?", response.getText());
   }
 
 }

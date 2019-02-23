@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 public class Bartender {
 
   public GreetingsResponse greet(GreetingsRequest request) {
-    return new GreetingsResponse("Hello, how can I help you ?");
+    return new GreetingsResponse("hello, how can I help you?");
   }
 
   public OrderResponse order(OrderRequest request) {
