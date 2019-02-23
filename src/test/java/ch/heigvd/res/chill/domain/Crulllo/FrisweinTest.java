@@ -1,4 +1,4 @@
-package ch.heigvd.res.chill.domain.wasadigi;
+package ch.heigvd.res.chill.domain.Crulllo;
 
 import ch.heigvd.res.chill.domain.Bartender;
 import ch.heigvd.res.chill.protocol.OrderRequest;
@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class FrisweinTest {
 
@@ -21,7 +21,7 @@ class FrisweinTest {
     @Test
     void aBartenderShouldAcceptAnOrderForFriswein() {
         Bartender alfred = new Bartender();
-        String productName = "ch.heigvd.res.chill.domain.wasadigi.Friswein";
+        String productName = "ch.heigvd.res.chill.domain.Crulllo.Friswein";
         OrderRequest request = new OrderRequest(2, productName);
         OrderResponse response = alfred.order(request);
         BigDecimal expectedTotalPrice = Friswein.PRICE.multiply(new BigDecimal(2));
