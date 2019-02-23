@@ -23,8 +23,6 @@ chill.iml
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
-chill.iml
-.idea/misc.xml
 
 # Generated files
 .idea/**/contentModel.xml
