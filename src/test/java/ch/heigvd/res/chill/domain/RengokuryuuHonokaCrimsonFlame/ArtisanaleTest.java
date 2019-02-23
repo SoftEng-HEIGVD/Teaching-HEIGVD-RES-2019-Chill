@@ -1,6 +1,7 @@
-package ch.heigvd.res.chill.domain.wasadigi;
+package ch.heigvd.res.chill.domain.RengokuryuuHonokaCrimsonFlame;
 
 import ch.heigvd.res.chill.domain.Bartender;
+import ch.heigvd.res.chill.domain.RengokuryuuHonokaCrimsonflame.Artisanale;
 import ch.heigvd.res.chill.protocol.OrderRequest;
 import ch.heigvd.res.chill.protocol.OrderResponse;
 import org.junit.jupiter.api.Test;
@@ -21,7 +22,7 @@ class ArtisanaleTest {
     @Test
     void aBartenderShouldAcceptAnOrderForArtisanale(){
         Bartender kokui = new Bartender();
-        String productName = "ch.heigvd.res.chill.domain.wasadigi.Artisanale";
+        String productName = "ch.heigvd.res.chill.domain.RengokuryuuHonokaCrimsonflame.Artisanale";
         OrderRequest request = new OrderRequest(42, productName);
         OrderResponse response = kokui.order(request);
         BigDecimal exceptedTotalPrice = Artisanale.PRICE.multiply(new BigDecimal(42));
