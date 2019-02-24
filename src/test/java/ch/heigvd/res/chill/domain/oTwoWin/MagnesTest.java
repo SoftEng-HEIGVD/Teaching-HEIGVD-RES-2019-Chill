@@ -11,14 +11,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MagnesTest {
     @Test
-    void thePriceAndNameForBoxerShouldBeCorrect() {
+    void thePriceAndNameForMagnesShouldBeCorrect() {
         Magnes beer = new Magnes();
         assertEquals(beer.getName(), Magnes.NAME);
         assertEquals(beer.getPrice(), Magnes.PRICE);
     }
 
     @Test
-    void aBartenderShouldAcceptAnOrderForBoxer() {
+    void aBartenderShouldAcceptAnOrderForMagnes() {
         Bartender jane = new Bartender();
         String productName = "ch.heigvd.res.chill.domain.oTwoWin.Magnes";
         OrderRequest request = new OrderRequest(3, productName);
