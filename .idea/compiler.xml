@@ -9,8 +9,5 @@
         <module name="chill" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="chill" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
