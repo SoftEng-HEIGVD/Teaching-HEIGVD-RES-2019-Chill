@@ -1,4 +1,5 @@
-package ch.heigvd.res.chill.domain;
+package ch.heigvd.res.chill.domain.CosmicElodie;
+import ch.heigvd.res.chill.domain.Bartender;
 import ch.heigvd.res.chill.domain.CosmicElodie.Lager;
 import org.junit.jupiter.api.Test;
 import ch.heigvd.res.chill.protocol.OrderRequest;
