@@ -5,7 +5,7 @@ Evolving project used to illustrate network programming concepts
 
 Maven is a tool that allows the management of java project automation. It allows us several functionality like:
 - Unit test
-- Bookstore management
+- library management
 - Compilation and deployment of java application (JAR)
 
 # What is projet lombok ?
