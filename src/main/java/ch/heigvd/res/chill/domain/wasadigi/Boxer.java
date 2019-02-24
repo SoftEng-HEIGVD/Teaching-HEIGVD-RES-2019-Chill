@@ -6,16 +6,16 @@ import java.math.BigDecimal;
 
 public class Boxer implements IProduct {
 
-  public final static String NAME = "Boxer";
-  public final static BigDecimal PRICE = new BigDecimal(2.0);
+    public final static String NAME = "Boxer";
+    public final static BigDecimal PRICE = new BigDecimal(2.0);
 
-  @Override
-  public String getName() {
-    return NAME;
-  }
+    @Override
+    public String getName() {
+        return NAME;
+    }
 
-  @Override
-  public BigDecimal getPrice() {
-    return PRICE;
-  }
+    @Override
+    public BigDecimal getPrice() {
+        return PRICE;
+    }
 }
