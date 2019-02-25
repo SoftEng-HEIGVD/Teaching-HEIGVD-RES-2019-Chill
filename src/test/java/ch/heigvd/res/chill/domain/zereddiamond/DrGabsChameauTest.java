@@ -19,7 +19,7 @@ class DrGabsChameauTest {
     }
 
     @Test
-    void aBartenderSouldAcceptAnOrderForDrGabsChameau() {
+    void aBartenderShouldAcceptAnOrderForDrGabsChameau() {
         Bartender jack = new Bartender();
         String productName = "ch.heigvd.res.chill.domain.zereddiamond.DrGabsChameau";
         OrderRequest request = new OrderRequest(2, productName);
