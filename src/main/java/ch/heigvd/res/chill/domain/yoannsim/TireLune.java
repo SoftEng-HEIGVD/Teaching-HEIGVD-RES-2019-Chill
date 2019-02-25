@@ -2,9 +2,10 @@ package ch.heigvd.res.chill.domain.yoannsim;
 import ch.heigvd.res.chill.domain.IProduct;
 
 import java.math.BigDecimal;
-public class Guinness implements IProduct {
 
-        public final static String NAME = "Guinness";
+public class TireLune implements IProduct {
+
+        public final static String NAME = "TireLune";
         public final static BigDecimal PRICE = new BigDecimal(3.75);
 
         @Override
