@@ -8,18 +8,18 @@ import java.math.BigDecimal;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class GuinnessTest {
+public class TireLuneTest {
     @Test
     void thePriceAndNameForGuinnessShouldBeCorrect() {
-        Guinness beer = new Guinness();
-        assertEquals(beer.getName(), Guinness.NAME);
-        assertEquals(beer.getPrice(), Guinness.PRICE);
+        TireLune beer = new TireLune();
+        assertEquals(beer.getName(), TireLune.NAME);
+        assertEquals(beer.getPrice(), TireLune.PRICE);
     }
 
     @Test
     void aBartenderShouldAcceptAnOrderForGuinness() {
         Bartender jane = new Bartender();
-        String productName = "ch.heigvd.res.chill.domain.yoannsim.Guinness";
+        String productName = "ch.heigvd.res.chill.domain.yoannsim.TireLune";
         OrderRequest request = new OrderRequest(3, productName);
         OrderResponse response = jane.order(request);
         BigDecimal expectedTotalPrice = Guinness.PRICE.multiply(new BigDecimal(3));
