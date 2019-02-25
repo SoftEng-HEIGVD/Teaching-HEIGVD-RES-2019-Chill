@@ -1,4 +1,4 @@
-package ch.heigvd.res.chill.domain.XBrast;
+package ch.heigvd.res.chill.domain.BasileBotebol;
 
 import ch.heigvd.res.chill.domain.Bartender;
 import ch.heigvd.res.chill.protocol.OrderRequest;
@@ -9,22 +9,22 @@ import java.math.BigDecimal;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class AlexLeRougeTest {
+class WestvleterenTest {
 
     @Test
-    void thePriceAndNameForAlexLeRougeShouldBeCorrect() {
-        AlexLeRouge beer = new AlexLeRouge();
-        assertEquals(beer.getName(), AlexLeRouge.NAME);
-        assertEquals(beer.getPrice(), AlexLeRouge.PRICE);
+    void thePriceAndNameForWestvleterenShouldBeCorrect() {
+        Westvleteren beer = new Westvleteren();
+        assertEquals(beer.getName(), Westvleteren.NAME);
+        assertEquals(beer.getPrice(), Westvleteren.PRICE);
     }
 
     @Test
-    void aBartenderShouldAcceptAnOrderForAlexRouge() {
+    void aBartenderShouldAcceptAnOrderForWestvleteren() {
         Bartender jane = new Bartender();
-        String productName = "ch.heigvd.res.chill.domain.XBrast.AlexLeRouge";
+        String productName = "ch.heigvd.res.chill.domain.BasileBotebol.Westvleteren";
         OrderRequest request = new OrderRequest(3, productName);
         OrderResponse response = jane.order(request);
-        BigDecimal expectedTotalPrice = AlexLeRouge.PRICE.multiply(new BigDecimal(3));
+        BigDecimal expectedTotalPrice = Westvleteren.PRICE.multiply(new BigDecimal(3));
         assertEquals(expectedTotalPrice, response.getTotalPrice());
     }
 
