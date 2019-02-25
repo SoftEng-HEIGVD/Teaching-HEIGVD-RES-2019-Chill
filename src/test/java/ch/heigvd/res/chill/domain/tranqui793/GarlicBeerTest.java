@@ -21,7 +21,7 @@ class GarlicBeerTest {
   @Test
   void aBartenderShouldAcceptAnOrderForBoxer() {
     Bartender jane = new Bartender();
-    String productName = "ch.heigvd.res.chill.domain.tranqui793.SuperBock";
+    String productName = "ch.heigvd.res.chill.domain.tranqui793.GarlicBeer";
     OrderRequest request = new OrderRequest(3, productName);
     OrderResponse response = jane.order(request);
     BigDecimal expectedTotalPrice = GarlicBeer.PRICE.multiply(new BigDecimal(3));
