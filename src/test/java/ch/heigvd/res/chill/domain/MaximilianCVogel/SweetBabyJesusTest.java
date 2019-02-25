@@ -22,7 +22,7 @@ class SweetBabyJesusTest {
   @Test
   void aBartenderShouldAcceptAnOrderForSweetBabyJesus() {
     Bartender jane = new Bartender();
-    String productName = "ch.heigvd.res.chill.domain.wasadigi.SweetBabyJesus";
+    String productName = "ch.heigvd.res.chill.domain.MaximilianCVogel.SweetBabyJesus";
     OrderRequest request = new OrderRequest(3, productName);
     OrderResponse response = jane.order(request);
     BigDecimal expectedTotalPrice = SweetBabyJesus.PRICE.multiply(new BigDecimal(3));
