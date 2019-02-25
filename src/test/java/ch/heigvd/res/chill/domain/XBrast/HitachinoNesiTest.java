@@ -9,6 +9,7 @@ import java.math.BigDecimal;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+// new japanese beer
 class HitachinoNesiTest {
 
     @Test
