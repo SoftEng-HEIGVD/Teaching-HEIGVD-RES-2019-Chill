@@ -5,7 +5,7 @@ import ch.heigvd.res.chill.domain.IProduct;
 import java.math.BigDecimal;
 
 public class Brandini implements IProduct {
-
+    //Test
     public final static String NAME = "Brandini";
     public final static BigDecimal PRICE = new BigDecimal(10.0);
 
