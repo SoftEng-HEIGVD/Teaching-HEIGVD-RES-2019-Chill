@@ -21,7 +21,7 @@ class GapenoTest {
     @Test
     void aBartenderShouldAcceptAnOrderForPunkIPA() {
         Bartender jane = new Bartender();
-        String productName = "ch.heigvd.res.chill.domain.wasadigi.Gapeno";
+        String productName = "ch.heigvd.res.chill.domain.Thorkal.Gapeno";
         OrderRequest request = new OrderRequest(3, productName);
         OrderResponse response = jane.order(request);
         BigDecimal expectedTotalPrice = Gapeno.PRICE.multiply(new BigDecimal(3));
