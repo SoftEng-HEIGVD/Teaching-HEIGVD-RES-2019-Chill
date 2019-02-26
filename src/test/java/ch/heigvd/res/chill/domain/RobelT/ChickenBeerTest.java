@@ -3,7 +3,6 @@ package ch.heigvd.res.chill.domain.RobelT;
 import ch.heigvd.res.chill.domain.Bartender;
 import ch.heigvd.res.chill.protocol.OrderRequest;
 import ch.heigvd.res.chill.protocol.OrderResponse;
-import com.sun.scenario.effect.impl.sw.java.JSWEffectPeer;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
