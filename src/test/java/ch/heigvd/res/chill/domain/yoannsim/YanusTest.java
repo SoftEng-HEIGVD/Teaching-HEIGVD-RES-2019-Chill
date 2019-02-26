@@ -10,14 +10,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
     class YanusTest {
     @Test
-    void thePriceAndNameForGuinnessShouldBeCorrect() {
+    void thePriceAndNameForYanusShouldBeCorrect() {
         Yanus beer = new Yanus();
         assertEquals(beer.getName(), Yanus.NAME);
         assertEquals(beer.getPrice(), Yanus.PRICE);
     }
 
     @Test
-    void aBartenderShouldAcceptAnOrderForGuinness() {
+    void aBartenderShouldAcceptAnOrderForYanus() {
         Bartender jane = new Bartender();
         String productName = "ch.heigvd.res.chill.domain.yoannsim.Yanus";
         OrderRequest request = new OrderRequest(3, productName);
