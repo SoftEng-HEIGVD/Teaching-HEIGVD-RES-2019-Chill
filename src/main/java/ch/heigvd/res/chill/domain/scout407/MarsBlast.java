@@ -4,6 +4,7 @@ import ch.heigvd.res.chill.domain.IProduct;
 
 import java.math.BigDecimal;
 
+//new
 public class MarsBlast implements IProduct {
 
     public final static String NAME = "Marsblast";
