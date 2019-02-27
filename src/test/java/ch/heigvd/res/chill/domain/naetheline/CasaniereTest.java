@@ -11,22 +11,22 @@ import java.math.BigDecimal;
 /**
  * Created by nathalie on 18/02/19.
  */
-public class CasanièreTest {
+public class CasaniereTest {
 
     @Test
     void thePriceAndNameForCasanièreShouldBeCorrect() {
-        Casanière beer = new Casanière();
-        assertEquals(beer.getName(), Casanière.NAME);
-        assertEquals(beer.getPrice(), Casanière.PRICE);
+        Casaniere beer = new Casaniere();
+        assertEquals(beer.getName(), Casaniere.NAME);
+        assertEquals(beer.getPrice(), Casaniere.PRICE);
     }
 
     @Test
     void aBartenderShouldAcceptAnOrderForCasanière() {
         Bartender Ellie = new Bartender();
-        String productName = "ch.heigvd.res.chill.domain.naetheline.Casanière";
+        String productName = "ch.heigvd.res.chill.domain.naetheline.Casaniere";
         OrderRequest request = new OrderRequest(2, productName);
         OrderResponse response = Ellie.order(request);
-        BigDecimal expectedTotalPrice = Casanière.PRICE.multiply(new BigDecimal(2));
+        BigDecimal expectedTotalPrice = Casaniere.PRICE.multiply(new BigDecimal(2));
         assertEquals(expectedTotalPrice, response.getTotalPrice());
     }
 
