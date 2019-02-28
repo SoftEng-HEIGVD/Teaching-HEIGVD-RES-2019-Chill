@@ -7,9 +7,9 @@ import ch.heigvd.res.chill.domain.IProduct;
 
 import java.math.BigDecimal;
 
-public class Casanière implements IProduct {
+public class Casaniere implements IProduct {
 
-    public final static String NAME = "Casanière";
+    public final static String NAME = "Casaniere";
     public final static BigDecimal PRICE = new BigDecimal(4.0);
 
     @Override
