@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class SantaMariaTest {
 
   @Test
-  void thePriceAndNameForBoxerShouldBeCorrect() {
+  void thePriceAndNameForSantaMariaShouldBeCorrect() {
     SantaMaria beer = new SantaMaria();
     assertEquals(beer.getName(), SantaMaria.NAME);
     assertEquals(beer.getPrice(), SantaMaria.PRICE);
