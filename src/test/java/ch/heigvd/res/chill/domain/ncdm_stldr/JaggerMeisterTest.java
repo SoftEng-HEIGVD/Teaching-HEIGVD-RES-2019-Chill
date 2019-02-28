@@ -21,7 +21,7 @@ class JaggerMeisterTest {
     @Test
     void aBartenderShouldAcceptAnOrderForJaggerMeister() {
         Bartender jane = new Bartender();
-        String productName = "ch.heigvd.res.chill.domain.NatMiz.JaggerMeister";
+        String productName = "ch.heigvd.res.chill.domain.ncdm_stldr.JaggerMeister";
         OrderRequest request = new OrderRequest(5, productName);
         OrderResponse response = jane.order(request);
         BigDecimal expectedTotalPrice = JaggerMeister.PRICE.multiply(new BigDecimal(5));
