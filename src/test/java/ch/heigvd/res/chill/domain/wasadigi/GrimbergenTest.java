@@ -1,6 +1,7 @@
 package ch.heigvd.res.chill.domain.wasadigi;
 
 import ch.heigvd.res.chill.domain.Bartender;
+import ch.heigvd.res.chill.domain.ga3tan.Grimbergen;
 import ch.heigvd.res.chill.protocol.OrderRequest;
 import ch.heigvd.res.chill.protocol.OrderResponse;
 import org.junit.jupiter.api.Test;
@@ -21,7 +22,7 @@ class GrimbergenTest {
     @Test
     void bartenderShouldAcceptOrderOfGrimbergen() {
         Bartender bartender = new Bartender();
-        String beerName = "ch.heigvd.res.chill.domain.wasadigi.Grimbergen";
+        String beerName = "ch.heigvd.res.chill.domain.ga3tan.Grimbergen";
         OrderRequest request = new OrderRequest(3, beerName);
         OrderResponse response = bartender.order(request);
         BigDecimal expectedTotalPrice = Duvel.PRICE.multiply(new BigDecimal(3));
