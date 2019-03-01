@@ -9,17 +9,17 @@ import java.math.BigDecimal;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class BoxerTest {
+class MilkTest {
 
     @Test
-    void thePriceAndNameForBoxerShouldBeCorrect() {
+    void thePriceAndNameForMilkShouldBeCorrect() {
         Milk product = new Milk();
         assertEquals(product.getName(), Milk.NAME);
         assertEquals(product.getPrice(), Milk.PRICE);
     }
 
     @Test
-    void aBartenderShouldAcceptAnOrderForBoxer() {
+    void aBartenderShouldAcceptAnOrderForMilk() {
         Bartender jane = new Bartender();
         String productName = "ch.heigvd.res.chill.domain.joshuaGomesDaCosta.Milk";
         OrderRequest request = new OrderRequest(2, productName);
