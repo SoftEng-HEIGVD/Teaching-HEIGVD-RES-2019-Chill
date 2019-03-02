@@ -25,7 +25,7 @@ class DenIsaiaTest {
     String productName = "ch.heigvd.res.chill.domain.Ichimizu.DenIsaia";
     OrderRequest request = new OrderRequest(6, productName);
     OrderResponse response = jane.order(request);
-    BigDecimal expectedTotalPrice = DenIsaia.PRICE.multiply(new BigDecimal(3));
+    BigDecimal expectedTotalPrice = DenIsaia.PRICE.multiply(new BigDecimal(6));
     assertEquals(expectedTotalPrice, response.getTotalPrice());
   }
 
