@@ -4,6 +4,7 @@ import ch.heigvd.res.chill.domain.IProduct;
 
 import java.math.BigDecimal;
 
+
 public class PG implements IProduct {
 
     public final static String NAME = "Biere Prix Garantie";
@@ -18,5 +19,5 @@ public class PG implements IProduct {
     public BigDecimal getPrice() {
         return PRICE;
     }
-    
+
 }

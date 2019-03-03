@@ -13,11 +13,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class PGTest {
 
     @Test
-    void thePriceAndNameForGrimbergenShouldBeCorrect() {
+    void thePriceAndNameForPGShouldBeCorrect() {
         PG beer = new PG();
         assertEquals(beer.getName(), PG.NAME);
         assertEquals(beer.getPrice(), PG.PRICE);
     }
+
 
     @Test
     void aBartenderShouldAcceptAnOrderForPG() {
