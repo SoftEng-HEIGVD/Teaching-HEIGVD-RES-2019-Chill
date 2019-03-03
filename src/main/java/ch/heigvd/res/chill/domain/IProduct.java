@@ -4,7 +4,8 @@ import java.math.BigDecimal;
 
 public interface IProduct {
 
-  String getName();
-  BigDecimal getPrice();
+    String getName();
+
+    BigDecimal getPrice();
 
 }

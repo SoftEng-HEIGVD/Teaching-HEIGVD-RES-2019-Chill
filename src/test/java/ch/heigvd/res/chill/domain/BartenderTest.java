@@ -8,12 +8,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class BartenderTest {
 
-  @Test
-  void aBartenderShouldReplyToGreetings() {
-    Bartender john = new Bartender();
-    GreetingsRequest request = new GreetingsRequest("Hi there");
-    GreetingsResponse response = john.greet(request);
-    assertEquals("hello, how can I help you?", response.getText());
-  }
+    @Test
+    void aBartenderShouldReplyToGreetings() {
+        Bartender john = new Bartender();
+        GreetingsRequest request = new GreetingsRequest("Hi there");
+        GreetingsResponse response = john.greet(request);
+        assertEquals("hello, how can I help you?", response.getText());
+    }
 
 }
