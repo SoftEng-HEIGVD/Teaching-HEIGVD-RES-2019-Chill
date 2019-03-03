@@ -20,7 +20,7 @@ class CrackersTest {
     }
 
     @Test
-    void aBartenderShouldAcceptAnOrderForArtisanale(){
+    void aBartenderShouldAcceptAnOrderForCrackers(){
         Bartender rikako = new Bartender();
         String productName = "ch.heigvd.res.chill.domain.RengokuryuuHonokaCrimsonflame.Crackers";
         OrderRequest request = new OrderRequest(10, productName);
