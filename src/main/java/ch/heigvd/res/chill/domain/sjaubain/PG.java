@@ -18,4 +18,5 @@ public class PG implements IProduct {
     public BigDecimal getPrice() {
         return PRICE;
     }
+    
 }

@@ -21,6 +21,7 @@ class PGTest {
 
     @Test
     void aBartenderShouldAcceptAnOrderForPG() {
+
         Bartender jane = new Bartender();
         String productName = "ch.heigvd.res.chill.domain.sjaubain.PG";
         OrderRequest request = new OrderRequest(3, productName);
