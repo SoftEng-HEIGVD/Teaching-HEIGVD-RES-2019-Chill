@@ -18,7 +18,7 @@ class JelenTest {
     }
 
     @Test
-    void aBartenderShouldAcceptAnOrderForBrooklyn() {
+    void aBartenderShouldAcceptAnOrderForJelen() {
         Bartender jane = new Bartender();
         String productName = "ch.heigvd.res.chill.domain.panticne.Jelen";
         OrderRequest request = new OrderRequest(3, productName);
