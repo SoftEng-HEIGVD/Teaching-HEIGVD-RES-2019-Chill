@@ -7,21 +7,21 @@ import java.math.BigDecimal;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
 
-class TroisDameTest {
+class GrimbergenTest {
     @Test
-    void thePriceAndNameForTroisDameShouldBeCorrect() {
-        TroisDame troisdame = new TroisDame();
-        assertEquals(troisdame.getName(), TroisDame.NAME);
-        assertEquals(troisdame.getPrice(), TroisDame.PRICE);
+    void thePriceAndNameForGrimbergenShouldBeCorrect() {
+        Grimbergen grimbergen = new Grimbergen();
+        assertEquals(grimbergen.getName(), Grimbergen.NAME);
+        assertEquals(grimbergen.getPrice(), Grimbergen.PRICE);
     }
 
     @Test
-    void aBartenderShouldAcceptAnOrderForTroisDame() {
+    void aBartenderShouldAcceptAnOrderForGrimbergen() {
         Bartender john = new Bartender();
-        String productName = "ch.heigvd.res.chill.domain.TroisDame";
+        String productName = "ch.heigvd.res.chill.domain.Grimbergen";
         OrderRequest request = new OrderRequest(3, productName);
         OrderResponse response = john.order(request);
-        BigDecimal expectedTotalPrice = TroisDame.PRICE.multiply(new BigDecimal(3));
+        BigDecimal expectedTotalPrice = Grimbergen.PRICE.multiply(new BigDecimal(3));
         assertEquals(expectedTotalPrice, response.getTotalPrice());
     }
 }
