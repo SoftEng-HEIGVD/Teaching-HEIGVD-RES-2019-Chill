@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
 
-class SalamandreTest extends groovy.util.GroovyTestCase {
+class SalamandreTest {
     @Test
     void thePriceAndNameForSalamandreShouldBeCorrect() {
         Salamandre salamandre = new Salamandre();
@@ -24,4 +24,5 @@ class SalamandreTest extends groovy.util.GroovyTestCase {
         BigDecimal expectedTotalPrice = Salamandre.PRICE.multiply(new BigDecimal(3));
         assertEquals(expectedTotalPrice, response.getTotalPrice());
     }
+
 }
