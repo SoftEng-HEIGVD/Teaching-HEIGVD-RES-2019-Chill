@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class BrooklynTest {
+class JelenTest {
     @Test
     void thePriceAndNameForBrooklynShouldBeCorrect() {
         Jelen beer = new Jelen();
